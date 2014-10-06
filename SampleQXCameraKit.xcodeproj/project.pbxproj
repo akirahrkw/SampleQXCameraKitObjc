@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E6F632619E2CF160034F076 /* QXCameraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B37DE19E2CB6A0053B1F1 /* QXCameraKit.framework */; };
+		8E6F632719E2CF1C0034F076 /* QXCameraKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E8B37DE19E2CB6A0053B1F1 /* QXCameraKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E8B37B519E2CB4F0053B1F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B37B419E2CB4F0053B1F1 /* main.m */; };
 		8E8B37B819E2CB4F0053B1F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B37B719E2CB4F0053B1F1 /* AppDelegate.m */; };
-		8E8B37BB19E2CB4F0053B1F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B37BA19E2CB4F0053B1F1 /* ViewController.m */; };
-		8E8B37BE19E2CB4F0053B1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B37BC19E2CB4F0053B1F1 /* Main.storyboard */; };
 		8E8B37C019E2CB4F0053B1F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B37BF19E2CB4F0053B1F1 /* Images.xcassets */; };
-		8E8B37C319E2CB4F0053B1F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B37C119E2CB4F0053B1F1 /* LaunchScreen.xib */; };
 		8E8B37CF19E2CB4F0053B1F1 /* SampleQXCameraKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B37CE19E2CB4F0053B1F1 /* SampleQXCameraKitTests.m */; };
+		8E8B37E719E2CB7A0053B1F1 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B37E519E2CB7A0053B1F1 /* CameraViewController.m */; };
+		8E8B37E819E2CB7A0053B1F1 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B37E619E2CB7A0053B1F1 /* CameraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8E6F632419E2CF110034F076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8B37D819E2CB6A0053B1F1 /* QXCameraKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E8B371119E1343B0053B1F1;
+			remoteInfo = QXCameraKit;
+		};
 		8E8B37C919E2CB4F0053B1F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E8B37A719E2CB4F0053B1F1 /* Project object */;
@@ -24,7 +32,34 @@
 			remoteGlobalIDString = 8E8B37AE19E2CB4F0053B1F1;
 			remoteInfo = SampleQXCameraKit;
 		};
+		8E8B37DD19E2CB6A0053B1F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8B37D819E2CB6A0053B1F1 /* QXCameraKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E8B371219E1343B0053B1F1;
+			remoteInfo = QXCameraKit;
+		};
+		8E8B37DF19E2CB6A0053B1F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8B37D819E2CB6A0053B1F1 /* QXCameraKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E8B371D19E1343B0053B1F1;
+			remoteInfo = QXCameraKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E8B37EC19E2CBBF0053B1F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E6F632719E2CF1C0034F076 /* QXCameraKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E8B37AF19E2CB4F0053B1F1 /* SampleQXCameraKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQXCameraKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,14 +67,14 @@
 		8E8B37B419E2CB4F0053B1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E8B37B619E2CB4F0053B1F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E8B37B719E2CB4F0053B1F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8E8B37B919E2CB4F0053B1F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8E8B37BA19E2CB4F0053B1F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8E8B37BD19E2CB4F0053B1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E8B37BF19E2CB4F0053B1F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8E8B37C219E2CB4F0053B1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8E8B37C819E2CB4F0053B1F1 /* SampleQXCameraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleQXCameraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8B37CD19E2CB4F0053B1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E8B37CE19E2CB4F0053B1F1 /* SampleQXCameraKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleQXCameraKitTests.m; sourceTree = "<group>"; };
+		8E8B37D819E2CB6A0053B1F1 /* QXCameraKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QXCameraKit.xcodeproj; path = ../QXCameraKit/QXCameraKit.xcodeproj; sourceTree = "<group>"; };
+		8E8B37E419E2CB7A0053B1F1 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		8E8B37E519E2CB7A0053B1F1 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		8E8B37E619E2CB7A0053B1F1 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6F632619E2CF160034F076 /* QXCameraKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +99,7 @@
 		8E8B37A619E2CB4F0053B1F1 = {
 			isa = PBXGroup;
 			children = (
+				8E8B37D819E2CB6A0053B1F1 /* QXCameraKit.xcodeproj */,
 				8E8B37B119E2CB4F0053B1F1 /* SampleQXCameraKit */,
 				8E8B37CB19E2CB4F0053B1F1 /* SampleQXCameraKitTests */,
 				8E8B37B019E2CB4F0053B1F1 /* Products */,
@@ -81,13 +118,12 @@
 		8E8B37B119E2CB4F0053B1F1 /* SampleQXCameraKit */ = {
 			isa = PBXGroup;
 			children = (
+				8E8B37E419E2CB7A0053B1F1 /* CameraViewController.h */,
+				8E8B37E519E2CB7A0053B1F1 /* CameraViewController.m */,
+				8E8B37E619E2CB7A0053B1F1 /* CameraViewController.xib */,
 				8E8B37B619E2CB4F0053B1F1 /* AppDelegate.h */,
 				8E8B37B719E2CB4F0053B1F1 /* AppDelegate.m */,
-				8E8B37B919E2CB4F0053B1F1 /* ViewController.h */,
-				8E8B37BA19E2CB4F0053B1F1 /* ViewController.m */,
-				8E8B37BC19E2CB4F0053B1F1 /* Main.storyboard */,
 				8E8B37BF19E2CB4F0053B1F1 /* Images.xcassets */,
-				8E8B37C119E2CB4F0053B1F1 /* LaunchScreen.xib */,
 				8E8B37B219E2CB4F0053B1F1 /* Supporting Files */,
 			);
 			path = SampleQXCameraKit;
@@ -119,6 +155,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E8B37D919E2CB6A0053B1F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B37DE19E2CB6A0053B1F1 /* QXCameraKit.framework */,
+				8E8B37E019E2CB6A0053B1F1 /* QXCameraKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +174,12 @@
 				8E8B37AB19E2CB4F0053B1F1 /* Sources */,
 				8E8B37AC19E2CB4F0053B1F1 /* Frameworks */,
 				8E8B37AD19E2CB4F0053B1F1 /* Resources */,
+				8E8B37EC19E2CBBF0053B1F1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8E6F632519E2CF110034F076 /* PBXTargetDependency */,
 			);
 			name = SampleQXCameraKit;
 			productName = SampleQXCameraKit;
@@ -186,6 +233,12 @@
 			mainGroup = 8E8B37A619E2CB4F0053B1F1;
 			productRefGroup = 8E8B37B019E2CB4F0053B1F1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8E8B37D919E2CB6A0053B1F1 /* Products */;
+					ProjectRef = 8E8B37D819E2CB6A0053B1F1 /* QXCameraKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8E8B37AE19E2CB4F0053B1F1 /* SampleQXCameraKit */,
@@ -194,13 +247,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8E8B37DE19E2CB6A0053B1F1 /* QXCameraKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QXCameraKit.framework;
+			remoteRef = 8E8B37DD19E2CB6A0053B1F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8B37E019E2CB6A0053B1F1 /* QXCameraKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QXCameraKitTests.xctest;
+			remoteRef = 8E8B37DF19E2CB6A0053B1F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8E8B37AD19E2CB4F0053B1F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8B37BE19E2CB4F0053B1F1 /* Main.storyboard in Resources */,
-				8E8B37C319E2CB4F0053B1F1 /* LaunchScreen.xib in Resources */,
+				8E8B37E819E2CB7A0053B1F1 /* CameraViewController.xib in Resources */,
 				8E8B37C019E2CB4F0053B1F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E8B37BB19E2CB4F0053B1F1 /* ViewController.m in Sources */,
+				8E8B37E719E2CB7A0053B1F1 /* CameraViewController.m in Sources */,
 				8E8B37B819E2CB4F0053B1F1 /* AppDelegate.m in Sources */,
 				8E8B37B519E2CB4F0053B1F1 /* main.m in Sources */,
 			);
@@ -236,31 +305,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8E6F632519E2CF110034F076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QXCameraKit;
+			targetProxy = 8E6F632419E2CF110034F076 /* PBXContainerItemProxy */;
+		};
 		8E8B37CA19E2CB4F0053B1F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8E8B37AE19E2CB4F0053B1F1 /* SampleQXCameraKit */;
 			targetProxy = 8E8B37C919E2CB4F0053B1F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8E8B37BC19E2CB4F0053B1F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E8B37BD19E2CB4F0053B1F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8E8B37C119E2CB4F0053B1F1 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E8B37C219E2CB4F0053B1F1 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8E8B37D019E2CB4F0053B1F1 /* Debug */ = {
@@ -283,6 +338,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -325,6 +381,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -342,20 +399,28 @@
 		8E8B37D319E2CB4F0053B1F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SampleQXCameraKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../QXCameraKit";
 			};
 			name = Debug;
 		};
 		8E8B37D419E2CB4F0053B1F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SampleQXCameraKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../QXCameraKit";
 			};
 			name = Release;
 		};
@@ -412,6 +477,7 @@
 				8E8B37D419E2CB4F0053B1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E8B37D519E2CB4F0053B1F1 /* Build configuration list for PBXNativeTarget "SampleQXCameraKitTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +486,7 @@
 				8E8B37D719E2CB4F0053B1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
