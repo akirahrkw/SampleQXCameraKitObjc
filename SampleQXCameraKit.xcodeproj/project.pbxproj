@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E14FCD219E816990031C1A3 /* AFTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E14FCD119E816990031C1A3 /* AFTouchView.m */; };
 		8E6F632619E2CF160034F076 /* QXCameraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B37DE19E2CB6A0053B1F1 /* QXCameraKit.framework */; };
 		8E6F632719E2CF1C0034F076 /* QXCameraKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E8B37DE19E2CB6A0053B1F1 /* QXCameraKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E8B37B519E2CB4F0053B1F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B37B419E2CB4F0053B1F1 /* main.m */; };
@@ -62,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E14FCD019E816990031C1A3 /* AFTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTouchView.h; sourceTree = "<group>"; };
+		8E14FCD119E816990031C1A3 /* AFTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTouchView.m; sourceTree = "<group>"; };
 		8E8B37AF19E2CB4F0053B1F1 /* SampleQXCameraKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQXCameraKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8B37B319E2CB4F0053B1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E8B37B419E2CB4F0053B1F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 		8E8B37B119E2CB4F0053B1F1 /* SampleQXCameraKit */ = {
 			isa = PBXGroup;
 			children = (
+				8E14FCD019E816990031C1A3 /* AFTouchView.h */,
+				8E14FCD119E816990031C1A3 /* AFTouchView.m */,
 				8E8B37E419E2CB7A0053B1F1 /* CameraViewController.h */,
 				8E8B37E519E2CB7A0053B1F1 /* CameraViewController.m */,
 				8E8B37E619E2CB7A0053B1F1 /* CameraViewController.xib */,
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E14FCD219E816990031C1A3 /* AFTouchView.m in Sources */,
 				8E8B37E719E2CB7A0053B1F1 /* CameraViewController.m in Sources */,
 				8E8B37B819E2CB4F0053B1F1 /* AppDelegate.m in Sources */,
 				8E8B37B519E2CB4F0053B1F1 /* main.m in Sources */,

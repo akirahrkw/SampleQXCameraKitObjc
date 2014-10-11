@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -9,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController">
             <connections>
                 <outlet property="liveImageView" destination="5tu-Nu-akj" id="yiN-Le-UHa"/>
+                <outlet property="touchView" destination="nA0-sI-Phi" id="PDz-Uz-oEd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="zoomInButton" destination="Vo7-PK-BJa" id="WKm-F9-3zh"/>
                 <outlet property="zoomOutButton" destination="CjK-yo-4jD" id="M6d-fN-lTI"/>
@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tu-Nu-akj">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tu-Nu-akj">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -36,6 +36,22 @@
                         </mask>
                     </variation>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nA0-sI-Phi" customClass="AFTouchView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nA0-sI-Phi" secondAttribute="height" multiplier="1:1" id="blN-rV-rkD"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="blN-rV-rkD"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="blN-rV-rkD"/>
+                        </mask>
+                    </variation>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vo7-PK-BJa">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                     <color key="backgroundColor" red="0.76078431369999999" green="0.2274509804" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,15 +134,19 @@
                 <constraint firstAttribute="centerX" secondItem="5tu-Nu-akj" secondAttribute="centerX" id="RBM-kJ-wZW"/>
                 <constraint firstItem="5tu-Nu-akj" firstAttribute="bottom" secondItem="Vo7-PK-BJa" secondAttribute="top" id="RM4-fC-MKi"/>
                 <constraint firstAttribute="trailing" secondItem="5tu-Nu-akj" secondAttribute="trailing" id="TGo-7u-nQ8"/>
+                <constraint firstItem="nA0-sI-Phi" firstAttribute="top" secondItem="5tu-Nu-akj" secondAttribute="top" id="Vjh-Gj-02g"/>
                 <constraint firstAttribute="trailing" secondItem="CjK-yo-4jD" secondAttribute="trailing" id="WAX-aR-FhS"/>
+                <constraint firstItem="nA0-sI-Phi" firstAttribute="bottom" secondItem="5tu-Nu-akj" secondAttribute="bottom" id="ZpH-Gz-cHu"/>
                 <constraint firstAttribute="bottom" secondItem="zkL-ZA-q2w" secondAttribute="bottom" constant="25" id="a6Y-ww-vgS"/>
                 <constraint firstItem="CjK-yo-4jD" firstAttribute="width" secondItem="Vo7-PK-BJa" secondAttribute="width" id="eOP-6h-sBj"/>
+                <constraint firstItem="nA0-sI-Phi" firstAttribute="leading" secondItem="5tu-Nu-akj" secondAttribute="leading" id="er1-io-Ckl"/>
                 <constraint firstAttribute="centerX" secondItem="zkL-ZA-q2w" secondAttribute="centerX" id="z1e-Gi-Th5"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="5tu-Nu-akj"/>
+                    <exclude reference="nA0-sI-Phi"/>
                     <exclude reference="Vo7-PK-BJa"/>
                     <exclude reference="CjK-yo-4jD"/>
                     <exclude reference="zkL-ZA-q2w"/>
@@ -144,11 +164,15 @@
                     <exclude reference="RBM-kJ-wZW"/>
                     <exclude reference="RM4-fC-MKi"/>
                     <exclude reference="TGo-7u-nQ8"/>
+                    <exclude reference="Vjh-Gj-02g"/>
+                    <exclude reference="ZpH-Gz-cHu"/>
+                    <exclude reference="er1-io-Ckl"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
                     <include reference="5tu-Nu-akj"/>
+                    <include reference="nA0-sI-Phi"/>
                     <include reference="Vo7-PK-BJa"/>
                     <include reference="CjK-yo-4jD"/>
                     <include reference="zkL-ZA-q2w"/>
@@ -166,6 +190,9 @@
                     <include reference="RBM-kJ-wZW"/>
                     <include reference="RM4-fC-MKi"/>
                     <include reference="TGo-7u-nQ8"/>
+                    <include reference="Vjh-Gj-02g"/>
+                    <include reference="ZpH-Gz-cHu"/>
+                    <include reference="er1-io-Ckl"/>
                 </mask>
             </variation>
         </view>

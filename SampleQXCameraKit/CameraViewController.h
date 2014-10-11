@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFTouchView.h"
 
 @interface CameraViewController : UIViewController
+
+@property IBOutlet AFTouchView *touchView;
 
 @property IBOutlet UIImageView *liveImageView;
 

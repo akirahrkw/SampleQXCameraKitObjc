@@ -125,12 +125,14 @@
         @synchronized(self) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [selfie.liveImageView setImage:croppedImage];
-                selfie.liveImageView.transform = CGAffineTransformMakeRotation(-M_PI_2);
             });
         }
     };
     
     self.manager = [[QXAPIManager alloc] init];
+    self.touchView.manager = _manager;
+    self.liveImageView.transform = CGAffineTransformMakeRotation(-M_PI_2);
+    self.touchView.transform = CGAffineTransformMakeRotation(-M_PI_2);
     [_manager discoveryDevicesWithFetchImageBlock:block];
 }
 
